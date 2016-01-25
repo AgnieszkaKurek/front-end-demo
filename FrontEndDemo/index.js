@@ -22,7 +22,7 @@ if (none == undefined) {
     console.log("none is undefined");
 }
 
-if (aNumber == 10) {
+if (aNumber == "10") {
     console.log("10 is 10")
 }
 
