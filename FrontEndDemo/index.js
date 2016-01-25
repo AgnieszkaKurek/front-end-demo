@@ -22,6 +22,7 @@ if (!none == undefined) {
     console.log("none is undefined");
 }
 
+
 if (aNumber == "10") {
     console.log("10 is 10")
 }
@@ -39,6 +40,21 @@ function showMsg(msg, more) {
 
 showMsg("some information");
 showMsg("some information", "and even more");
+
+var showIt = function (msg) {
+    console.log(msg);
+}
+
+showMsg("Some message");
+
+function showItThen(msg, callback) {
+    showIt(msg);
+    callback();
+}
+
+showItThen("showItThen called", function () {
+    console.log("collback called");
+});
 
 
      
