@@ -18,12 +18,19 @@ console.log("trueFalse is" + typeof (trueFalse));
 
 //msgs = "this shouldn't work";
 
-if (none == undefined) {
+if (!none == undefined) {
     console.log("none is undefined");
 }
 
 if (aNumber == "10") {
     console.log("10 is 10")
 }
+
+function showMsg(msg) {
+    console.log("showMsg:" + msg);
+}
+
+showMsg("some information");
+
 
      
