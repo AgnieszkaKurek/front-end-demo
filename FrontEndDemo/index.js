@@ -15,4 +15,7 @@ console.log("aNumber is" + typeof (aNumber));
  
 var trueFalse = true;
 console.log("trueFalse is" + typeof (trueFalse));
+
+msgs = "this shouldn't work";
+
      
