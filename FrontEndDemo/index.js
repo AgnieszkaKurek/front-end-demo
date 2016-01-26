@@ -56,5 +56,13 @@ showItThen("showItThen called", function () {
     console.log("collback called");
 });
 
+var inGlobal = true;
+
+function testMe() {
+    console.log("testMe():" + inGlobal);
+    var someMsg = "some Message";
+    console.log("testMe():" + someMsg);
+}
+
 
      
