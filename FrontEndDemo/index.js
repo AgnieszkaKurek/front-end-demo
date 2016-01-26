@@ -6,21 +6,21 @@ resultsDiv.innerHTML = "<p>This is from Java Script</p>";
 
 
 
-var result = {
-    name: "jQuery",
-    language: "JavaScript",
-    score: 4.5,
-    showLog: function () {
-    },
-    owner: {
-        login: "agnieszkakurek",
-        id:123456
-    }
-};
+//var result = {
+    //name: "jQuery",
+    //language: "JavaScript",
+    //score: 4.5,
+    //showLog: function () {
+   // },
+    //owner: {
+       // login: "agnieszkakurek",
+       // id:123456
+//}
+//};
 
-result.phoneNumber = "123-456-7890";
+//result.phoneNumber = "123-456-7890";
 
-console.log(result.phoneNumber);
+//console.log(result.phoneNumber);
 
 var results = [{
     name: "jQuery",
@@ -45,8 +45,15 @@ var results = [{
     }
 },];
 
-results.push(result);
-results.push({
-    name:"dummy projeect"
-})
+for (var x = 0; x < results.length; x++ ){
+    var result = results[x];
+    console.log(result.name);
+}
+//console.log(results.length);
+//console.log(results[0].name);
+
+//results.push(result);
+//results.push({
+    //name:"dummy projeect"
+//})
 
