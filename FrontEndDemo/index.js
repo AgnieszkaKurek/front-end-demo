@@ -10,18 +10,18 @@
     var resultList = $("#resultList");
     resultList.text("This is from jQuery");
 
-    var toggleButton = $("#toggleButton");
-    toggleButton.on("click", function () {
-        resultList.toggle(500);
+    //var toggleButton = $("#toggleButton");
+    //toggleButton.on("click", function () {
+        //resultList.toggle(500);
 
-        if (toggleButton.text() == "Hide") toggleButton.text("Show");
-        else toggleButton.text("Hide");
+        //if (toggleButton.text() == "Hide") toggleButton.text("Show");
+       // else toggleButton.text("Hide");
 
-    });
+    //});
 
-    var listItems = $("header nav li");
-    listItems.css("font-weight", "bold");
-    listItems.filter(":first").css("font-size", "18px");
+    //var listItems = $("header nav li");
+    //listItems.css("font-weight", "bold");
+    //listItems.filter(":first").css("font-size", "18px");
     
 
 
@@ -41,37 +41,50 @@
 
     //console.log(result.phoneNumber);
 
-    //var results = [
-    // {
-    // name: "jQuery",
-    // language: "JavaScript",
-    //score: 4.5,
-    //showLog: function () {
+    var results = [
+     {
+     name: "jQuery",
+     language: "JavaScript",
+    score: 4.5,
+    showLog: function () {
 
-    // },
-    //owner: {
-    // login: "agnieszkakurek",
-    // id: 123456
-    // }
-    //},
-    //{
-    // name: "jQuery UI",
-    //language: "JavaScript",
-    //score: 3.5,
-    //showLog: function () {
+     },
+    owner: {
+     login: "agnieszkakurek",
+     id: 123456
+     }
+    },
+    {
+     name: "jQuery UI",
+     language: "JavaScript",
+     score: 3.5,
+     showLog: function () {
 
-    //},
-    //owner: {
-    // login: "agnieszkakurek",
-    //id: 123456
-    // }
-    //},
-    //];
+    },
+    owner: {
+     login: "agnieszkakurek",
+     id: 123456
+     }
+    },
+    ];
 
-    //for (var x = 0; x < results.length; x++) {
-    // var result = results[x];
-    //if (result.score < 4) continue-9+60;
-    //console.log(result.name);
+    resultList.empty();
+    $.each(results, function (i, item) {
+        var newResult = "<div class = 'result'>" +
+            "<div class = 'title'>" + item.name + "</div>" +
+            "<div>Lanugage:" + item.language + "</div>" +
+            "<div>Owner:" + item.owner.login + "</div>" +
+            "</div>";
+
+        resultList.append(newResult);
+            
+    }
+    );
+
+   //for (var x = 0; x < results.length; x++) {
+     //var result = results[x];
+     //if (result.score < 4) continue-9+60;
+     //console.log(result.name);
     //}
     //console.log(results.length);
     //console.log(results[0].name);
