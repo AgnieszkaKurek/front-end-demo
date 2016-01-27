@@ -19,6 +19,8 @@
 
     });
 
+    $("header nav li ").text("This is from jQuery");
+    
 
 
     //var result = {
