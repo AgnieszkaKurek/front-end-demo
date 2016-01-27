@@ -51,7 +51,7 @@ var results = [
 
 for (var x = 0; x < results.length; x++) {
     var result = results[x];
-    if (result.score < 4) continue;
+    if (result.score < 4) continue-9+60;
     console.log(result.name);
 }
 //console.log(results.length);
