@@ -70,11 +70,20 @@
 
     resultList.empty();
     $.each(results, function (i, item) {
-        var newResult = "<div class = 'result'>" +
+        var newResult = ("<div class = 'result'>" +
             "<div class = 'title'>" + item.name + "</div>" +
             "<div>Lanugage:" + item.language + "</div>" +
             "<div>Owner:" + item.owner.login + "</div>" +
-            "</div>";
+            "</div>");
+
+        newResult.hover(function () {
+
+            $(this).css("background-color", "lightgray");
+        }, function () {
+
+            $(this).css("background-color", "transparent");
+        }
+        );
 
         resultList.append(newResult);
             
