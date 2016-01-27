@@ -3,7 +3,7 @@
 
 //var resultsDiv = document.getElementById("results");
 //resultsDiv.innerHTML = "<p>This is from Java Script</p>";
-var resultList = jQuery("#resultList");
+var resultList = $("#resultList");
 resultList.text("This is from jQuery");
 
 
