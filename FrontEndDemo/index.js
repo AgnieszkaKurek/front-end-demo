@@ -70,7 +70,7 @@
 
     resultList.empty();
     $.each(results, function (i, item) {
-        var newResult = ("<div class = 'result'>" +
+        var newResult = $("<div class = 'result'>" +
             "<div class = 'title'>" + item.name + "</div>" +
             "<div>Lanugage:" + item.language + "</div>" +
             "<div>Owner:" + item.owner.login + "</div>" +
@@ -85,7 +85,7 @@
         }
         );
 
-        resultList.append(newResult);
+       resultList.append(newResult);
             
     }
     );
@@ -103,4 +103,5 @@
     //name:"dummy projeect"
     //})
 
-});
+    }
+);
